@@ -16,10 +16,11 @@ namespace NotebookApplication_hymanCorop
         public string _roleName;
         public UsersLogin _user;
 
-        public MainWindow(LoginScreen login)
+        public MainWindow(LoginScreen login, string roleShortName)
         {
             InitializeComponent();
             _login = login;
+            _roleName = roleShortName;
         }
 
         public MainWindow(LoginScreen login, UsersLogin user)
@@ -109,7 +110,7 @@ namespace NotebookApplication_hymanCorop
 
         private void MainWindow_Load(object sender, EventArgs e)
         {
-            /*if (_user.password == Utils.DefaultHashPassword())
+            if (_user.password == Utils.DefaultHashPassword())
             {
                 var resetPassword = new ResetPassword();
                 resetPassword.ShowDialog();
@@ -121,7 +122,7 @@ namespace NotebookApplication_hymanCorop
             if (_roleName != "A1")
             {
                 manageAccessToolStripMenuItem.Visible = false;
-            }*/
+            }
         }
 
         private void resetPasswordToolStripMenuItem_Click(object sender, EventArgs e)

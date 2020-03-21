@@ -5,12 +5,12 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="78bc014ae1544c5ca0cd0322a72c364e" Name="Diagram1">
-        <EntityTypeShape EntityType="NotebookAppModel.Role" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="NotebookAppModel.UserRole" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="NotebookAppModel.UsersLogin" Width="1.5" PointX="5.375" PointY="0.75" IsExpanded="true" />
-        <AssociationConnector Association="NotebookAppModel.FK_UserRoles_Roles" ManuallyRouted="false" />
-        <AssociationConnector Association="NotebookAppModel.FK_UserRoles_UsersLogin" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="NotebookAppModel.sysdiagram" Width="1.5" PointX="1.125" PointY="4.375" />
+        <EntityTypeShape EntityType="NotebookAppModel.Role" Width="1.5" PointX="0.875" PointY="1" />
+        <EntityTypeShape EntityType="NotebookAppModel.sysdiagram" Width="1.5" PointX="5.625" PointY="4" />
+        <EntityTypeShape EntityType="NotebookAppModel.UserRole" Width="1.5" PointX="3.125" PointY="0.875" />
+        <EntityTypeShape EntityType="NotebookAppModel.UsersLogin" Width="1.5" PointX="1" PointY="3.375" />
+        <AssociationConnector Association="NotebookAppModel.FK_UserRoles_Roles" />
+        <AssociationConnector Association="NotebookAppModel.FK_UserRoles_UsersLogin" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

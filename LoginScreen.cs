@@ -17,7 +17,8 @@ namespace NotebookApplication_hymanCorop
         public LoginScreen()
         {
             InitializeComponent();
-            _db = new NotebookAppEntities();
+            _db = new NotebookAppEntities(); 
+
         }
 
         private void login_btn_Click(object sender, EventArgs e)
@@ -35,8 +36,8 @@ namespace NotebookApplication_hymanCorop
                 else
                 {
                     var role = user.UserRoles.FirstOrDefault();
-                    var roleshortName = role.Role.shortname;
-                    var mainWindow = new MainWindow(this, roleshortName);
+                    var roleShortName = role.Role.shortname;
+                    var mainWindow = new MainWindow(this, roleShortName);
                     mainWindow.Show();
                     Hide();
                 }
